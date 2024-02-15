@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using DotNetTrainingBatch3.ConsoleApp.AdoDotNetExamples;
+using DotNetTrainingBatch3.ConsoleApp.DapperExamples;
+using DotNetTrainingBatch3.ConsoleApp.EFCoreExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -37,3 +40,26 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine(dr["BlogAuthor"]);
 //    Console.WriteLine(dr["BlogContent"]);
 //}
+
+AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+//adoDotNetExample.Read();
+//adoDotNetExample.Edit(5);
+//adoDotNetExample.Edit(11);
+//adoDotNetExample.Create("test title", "test author", "test content");
+//adoDotNetExample.Update(1014,"test title8", "test author8", "test content8");
+//adoDotNetExample.Delete(1015);
+
+DapperExample dapperExample = new DapperExample();
+//dapperExample.Read();
+//dapperExample.Edit(2);
+//dapperExample.Create("test title5","test author5","test content5");
+//dapperExample.Update(1016, "test title9", "test author9", "test content9");
+//dapperExample.Delete(1016);
+
+EFCoreExample eFCoreExample = new EFCoreExample();
+//eFCoreExample.Read();
+//eFCoreExample.Edit(6);
+//eFCoreExample.Create("test title2", "test author2", "test content2");
+//eFCoreExample.Update(1017, "test title9", "test author9", "test content9");
+eFCoreExample.Delete(1017);
+
