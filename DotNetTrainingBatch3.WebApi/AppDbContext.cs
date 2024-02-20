@@ -1,4 +1,4 @@
-﻿using DotNetTrainingBatch3.ConsoleApp.Models;
+﻿using DotNetTrainingBatch3.WebApi.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DotNetTrainingBatch3.ConsoleApp.EFCoreExamples
+namespace DotNetTrainingBatch3.WebApi
 {
     public class AppDbContext : DbContext
     {

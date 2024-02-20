@@ -2,6 +2,9 @@
 using DotNetTrainingBatch3.ConsoleApp.AdoDotNetExamples;
 using DotNetTrainingBatch3.ConsoleApp.DapperExamples;
 using DotNetTrainingBatch3.ConsoleApp.EFCoreExamples;
+using DotNetTrainingBatch3.ConsoleApp.HttpClientExamples;
+using DotNetTrainingBatch3.ConsoleApp.Models;
+using Newtonsoft.Json;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -41,7 +44,7 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine(dr["BlogContent"]);
 //}
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.Read();
 //adoDotNetExample.Edit(5);
 //adoDotNetExample.Edit(11);
@@ -49,17 +52,48 @@ AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.Update(1014,"test title8", "test author8", "test content8");
 //adoDotNetExample.Delete(1015);
 
-DapperExample dapperExample = new DapperExample();
+//DapperExample dapperExample = new DapperExample();
 //dapperExample.Read();
 //dapperExample.Edit(2);
 //dapperExample.Create("test title5","test author5","test content5");
 //dapperExample.Update(1016, "test title9", "test author9", "test content9");
 //dapperExample.Delete(1016);
 
-EFCoreExample eFCoreExample = new EFCoreExample();
+//EFCoreExample eFCoreExample = new EFCoreExample();
 //eFCoreExample.Read();
 //eFCoreExample.Edit(6);
 //eFCoreExample.Create("test title2", "test author2", "test content2");
 //eFCoreExample.Update(1017, "test title9", "test author9", "test content9");
-eFCoreExample.Delete(1017);
+//eFCoreExample.Delete(1017);
+
+//Console.WriteLine("Waiting for api...");
+//Console.ReadKey();
+
+//HttpClientExample httpClientExample = new HttpClientExample();
+//await httpClientExample.Run();
+
+//BlogModel blog = new BlogModel();
+//blog.BlogTitle = "Test";
+//blog.BlogAuthor = "Test";
+//blog.BlogContent = "Test";
+
+//string json=JsonConvert.SerializeObject(blog);//C# object to json
+//Console.WriteLine(blog);
+//Console.WriteLine(json);
+//Console.WriteLine(blog.BlogTitle);
+//Console.WriteLine(blog.BlogAuthor);
+//Console.WriteLine(blog.BlogContent);
+
+//BlogModel blog2= JsonConvert.DeserializeObject<BlogModel>(json)!;
+//Console.WriteLine(blog2.BlogTitle);
+//Console.WriteLine(blog2.BlogAuthor);
+//Console.WriteLine(blog2.BlogContent);
+
+Console.WriteLine("Waiting for api...");
+Console.ReadKey();
+
+HttpClientExample httpClientExample = new HttpClientExample();
+await httpClientExample.Run();
+
+Console.ReadKey();
 

@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DotNetTrainingBatch3.ConsoleApp.Model;
+using DotNetTrainingBatch3.ConsoleApp.Models;
 using Dapper;
 
 namespace DotNetTrainingBatch3.ConsoleApp.DapperExamples

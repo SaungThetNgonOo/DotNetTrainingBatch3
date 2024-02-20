@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DotNetTrainingBatch3.ConsoleApp.Model
+namespace DotNetTrainingBatch3.ConsoleApp.Models
 {
     [Table("Tbl_Blog")]
     public class BlogModel
@@ -18,4 +18,14 @@ namespace DotNetTrainingBatch3.ConsoleApp.Model
         public string BlogAuthor { get; set; }
         public string BlogContent { get; set; }
     }
+
+
+    public class JsonPlaceHolderModel
+    {
+        public int userId { get; set; }
+        public int id { get; set; }
+        public string title { get; set; }
+        public string body { get; set; }
+    }
+
 }
