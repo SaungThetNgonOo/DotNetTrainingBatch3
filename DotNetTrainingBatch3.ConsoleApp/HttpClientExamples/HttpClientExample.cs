@@ -19,7 +19,7 @@ namespace DotNetTrainingBatch3.ConsoleApp.HttpClientExamples
             //await Edit(100);
             //await Create("title1", "author1", "content1");
             //await Update(3016, "title2", "author2", "content2");
-            await Delete(3016);
+            //await Delete(3016);
         }
         private async Task Read()
         {
