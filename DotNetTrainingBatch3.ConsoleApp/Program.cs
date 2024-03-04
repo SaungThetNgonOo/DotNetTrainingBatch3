@@ -46,12 +46,12 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine(dr["BlogContent"]);
 //}
 
-//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.Read();
 //adoDotNetExample.Edit(5);
 //adoDotNetExample.Edit(11);
 //adoDotNetExample.Create("test title", "test author", "test content");
-//adoDotNetExample.Update(1014,"test title8", "test author8", "test content8");
+adoDotNetExample.Update(1014,"test title8", "test author8", "test content8");
 //adoDotNetExample.Delete(1015);
 
 //DapperExample dapperExample = new DapperExample();
@@ -100,8 +100,8 @@ Console.ReadKey();
 //RestClientExample restClientExample=new RestClientExample();
 //await restClientExample.Run();
 
-RefitExample refitClientExample = new RefitExample();
-await refitClientExample.Run();
+//RefitExample refitClientExample = new RefitExample();
+//await refitClientExample.Run();
 
 Console.ReadKey();
 

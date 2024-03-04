@@ -42,7 +42,7 @@ C#
 
 [x] Postman [x] Asp.Net Core Web Api (Rest Api) [x] EF Dapper Ado.Net
 
-[x] Console App connect with ASP.NET Core Web API [x] HttpClient RestClient Refit
+[x] Console App connect with ASP.NET Core Web API [x] HttpClient[x] RestClient[x] Refit
 
 [x] Burma Project Ideas(Bird)
 

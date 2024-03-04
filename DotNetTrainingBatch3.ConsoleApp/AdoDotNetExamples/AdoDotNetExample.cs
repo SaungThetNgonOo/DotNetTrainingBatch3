@@ -138,7 +138,7 @@ namespace DotNetTrainingBatch3.ConsoleApp.AdoDotNetExamples
             cmd.Parameters.AddWithValue("@BlogAuthor", author);
             cmd.Parameters.AddWithValue("@BlogContent", content);
             int result = cmd.ExecuteNonQuery();
-
+            Console.WriteLine(result);
             Connection.Close();
             string message = result > 0 ? "Updating Successful." : "Updating Failed.";
             Console.WriteLine(message);
