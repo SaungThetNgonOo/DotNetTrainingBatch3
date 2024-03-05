@@ -160,6 +160,7 @@ function uuidv4() {
         _blogId='';
     }
 
+    //alert("Saving Successful.");
     $('#Title').val('');
     $('#Author').val('');
     $('#Content').val('');
@@ -168,7 +169,7 @@ function uuidv4() {
     readBlog();
   })
 
-  function successMessage(message){
+   function successMessage(message){
     Swal.fire({
         title: "Success",
         text: message,

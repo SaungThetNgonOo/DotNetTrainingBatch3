@@ -156,7 +156,7 @@ function uuidv4() {
     }
     else{
         updateBlog(_blogId,title,author,content);
-        successMessage('Updating Successful.');
+        successMessage("Updating Successful.");
         _blogId='';
     }
 
