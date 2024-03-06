@@ -68,6 +68,7 @@ function createBlog(title,author,content){
     //let jsonStr=JSON.stringify(lstBlogs);//change from query to json
     //localStorage.setItem(tblBlog,jsonStr)//set json in localStorage by db
     setLocalStorage(lstBlog);
+    readBlog();
 }
 function updateBlog(id,title,author,content){
     let lstBlog=getBlogs();
@@ -84,6 +85,7 @@ function updateBlog(id,title,author,content){
         Content:content
     }
     setLocalStorage(lstBlog);
+    readBlog();
 }
 function deleteBlog(id){
     Swal.fire({

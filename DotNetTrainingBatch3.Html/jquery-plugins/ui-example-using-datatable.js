@@ -1,27 +1,30 @@
 let _blogId = '';
 const tblBlog = 'Tbl-Blog';
-//runBlog();
-function generateData(rowCount){
-  for(let i=0;i<rowCount;i++){
-    let no=i+1;
-    createBlog('title'+no,'author'+no,`content ${no}`);
+runBlog();
+function generateData(rowCount) {
+  for (let i = 0; i < rowCount; i++) {// first assinged value 100
+    let no = i + 1;
+    createBlog('title' + no, 'author' + no, `content ${no}`);
   }
 }
 
 function runBlog() {
   readBlog();
-  editBlog('758baefd-bb25-4aff-8e75-62d4fab8ff9a');
-  editBlog('0');
-  createBlog('title','author','content');
+  // editBlog('758baefd-bb25-4aff-8e75-62d4fab8ff9a');
+  // editBlog('0');
+  // createBlog('title','author','content');
 
-  const id=prompt("Enter ID");
-  const title=prompt("Enter Title");
-  const author=prompt("Enter Author");
-  const content=prompt("Enter Content");
-  updateBlog(id,title,author,content);
-  deleteBlog(id);
+  // const id=prompt("Enter ID");
+  // const title=prompt("Enter Title");
+  // const author=prompt("Enter Author");
+  // const content=prompt("Enter Content");
+  // updateBlog(id,title,author,content);
+  // deleteBlog(id);
 }
 function readBlog() {
+  if ($.fn.DataTable.isDataTable('#datatable')) {
+    $('#datatable').DataTable().destroy();
+  }
   $('#tbDataTable').html('');
   let lstBlog = getBlogs();
   let htmlRow = '';
@@ -40,9 +43,10 @@ function readBlog() {
         <td>${item.Author}</td>
         <td>${item.Content}</td>
       </tr>`;
-    console.log(htmlRow);
-    $('#tbDataTable').html(htmlRow);
   }
+  console.log(htmlRow);
+  $('#tbDataTable').html(htmlRow);
+  new DataTable('#datatable');
 }
 function editBlog(id) {
   let lstBlog = getBlogs();
