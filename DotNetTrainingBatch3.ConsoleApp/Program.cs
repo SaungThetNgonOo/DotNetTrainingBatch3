@@ -51,7 +51,7 @@ AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.Edit(5);
 //adoDotNetExample.Edit(11);
 //adoDotNetExample.Create("test title", "test author", "test content");
-adoDotNetExample.Update(1014,"test title8", "test author8", "test content8");
+adoDotNetExample.Update(1014, "test title8", "test author8", "test content8");
 //adoDotNetExample.Delete(1015);
 
 //DapperExample dapperExample = new DapperExample();
